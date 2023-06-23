@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@baklavajs/themes@2.0.2-beta.4/dist/syrup-dark.css" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <script src="InitializeAudio.js"></script>
+    <div id="overlay" onclick="InitializeAudio()">Click anywhere to load app.</div>
+
+    <body>
+        <div id="editor"></div>
+        <div id="controls">
+            <div id="keyboardSpacer"></div>
+            <div id="keyboard"></div>
+            <div id="octaveSelector"></div>
+        </div>
+        <script src="Keyboard.js"></script>
+        <script src="OctaveControls.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/baklavajs@2.0.2-beta.4/dist/bundle.js"></script>
+        <script src="AudioNodes.js"></script>
+        <script src="Graph.js"></script>
+    </body>
+</html>
+
