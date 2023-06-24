@@ -1,3 +1,75 @@
+
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#editor {
+    width: 100%;
+    height: 70%;
+}
+
+#controls {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    font-family: "Lato", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    background-color: #1d2331;
+    color: white;
+    z-index: 1;
+}
+
+#keyboardSpacer {
+    width: 25%;
+}
+
+#keyboard {
+    width: 50%;
+    display: inline-flex;
+    align-items: center;
+    
+}
+
+#octaveSelector {
+    width: 25%;
+    display: flex;
+    margin: 20px;
+    align-items: first baseline;
+    justify-content: center;
+    font-size: xx-large;
+    flex-direction: column;
+}
+
+
+.key {
+    display: flex;
+    color: black;
+    background-color: ivory;
+    padding: 8px;
+    flex: 1;
+    font-size: 16px;
+    margin: 4px 0;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    height: 20vh;
+    width: 48px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgrey;
+    text-align: left;
+    align-items: baseline;
+}
+
+.black.key {
+    color: white;
+    background-color: black;
+}
+
+
+
 #overlay {
     /* From: https://www.w3schools.com/howto/howto_css_overlay.asp */
     position: fixed; /* Sit on top of the page content */
@@ -12,68 +84,3 @@
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
 }
-
-body {
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: grey;
-}
-
-#editor {
-    width: 100%;
-    height: 70%;
-}
-
-#controls {
-    height: auto;
-    width: 100%;
-    display: flex;
-    font-family: "Lato", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 15px;
-}
-
-#keyboardSpacer {
-    width: 10%;
-}
-
-#keyboard {
-    width: 80%;
-    text-align: center;
-    display: block;
-    justify-content: center;
-    
-}
-
-#octaveSelector {
-    width: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    font-size: xx-large;
-}
-
-
-.key {
-  color: grey;
-  background-color: ivory;
-  padding: 8px;
-  vertical-align: top;
-  text-decoration: none;
-  flex: 1;
-  font-size: 16px;
-  margin: 4px 0;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  height: 20vh;
-  width: 48px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: lightgrey;
-  border-top: none;
-}
-
-.black.key {
-    background-color: black;
-}
-

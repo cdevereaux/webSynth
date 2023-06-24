@@ -76,6 +76,8 @@ function KeyboardNoteOff(event) {
 
 function InitializeKeyboard() {
     let keyboard = document.getElementById("keyboard");
+    const keyNames = ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', '[', ']'];
+
 
     for (let i = 0; i < 12; i++) {
         let newKey = document.createElement('button');
@@ -85,6 +87,7 @@ function InitializeKeyboard() {
         newKey.addEventListener("mouseover", MouseNoteOn, false);
         newKey.addEventListener("mouseup", MouseNoteOff, false);
         newKey.addEventListener("mouseout", MouseNoteOff, false);
+        newKey.textContent = keyNames[i];
         keyboard.appendChild(newKey);
     }
 
